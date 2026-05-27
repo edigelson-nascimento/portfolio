@@ -30,3 +30,13 @@
       padding: 20px;
       text-align: center;
     }
+
+    @media (max-width: 768px) {
+      .layout {
+        grid-template-areas:
+          "header"
+          "content"
+          "menu"
+          "footer";
+      }
+    }
