@@ -1,0 +1,35 @@
+<!-- Sistema Simples de boas vindas em JS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas vindas</title>
+</head>
+<body>
+    <h1>Boas vindas!</h1>
+    <script>
+        alert("Bem-vindo ao nosso site!");
+        // Coleta de dados do usuário
+        let nome = prompt("Qual é o seu nome?");
+        console.log("Olá, " + nome + "! Bem-vindo ao nosso site.");
+        // Idadade do usuário
+        // verificação de idade para acesso a conteúdo adulto
+        let idade = prompt("Qual é a sua idade?");
+        if (parseInt(idade) < 18) {
+            alert("Desculpe, mas este site é apenas para maiores de 18 anos.");
+        } else {
+            alert("Bem-vindo ao nosso conteúdo adulto!");
+        }
+
+        //exibição de mensagem personalizada
+        alert("Olá, " + nome + "! Esperamos que você aproveite sua visita.");
+
+        //calculo e saida proxima idade soma mais 1
+        let proximaIdade = parseInt(idade) + 1;
+        alert("No próximo ano, você terá " + proximaIdade + " anos.");
+        
+
+    </script>
+</body>
+</html>
