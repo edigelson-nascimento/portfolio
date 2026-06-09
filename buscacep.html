@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP</title>
+</head>
+<body>
+
+    <!-- Elementos HTML adicionados para o script funcionar -->
+    <input type="text" id="cep" placeholder="Digite o CEP (apenas números)">
+    <button id="btn-cep">Buscar CEP</button>
+    <div id="resultado"></div>
+
+    <script>
+    // Correção: Removido o '#' de dentro do getElementById
+    const inputCep = document.getElementById('cep');
+    const btnCep = document.getElementById('btn-cep');
+    const resultado = document.getElementById('resultado');
+
+    btnCep.addEventListener('click', async () => {
+        const cep = inputCep.value.trim();
+        
+        // Validação simples para evitar requisições vazias
+        if (!cep) {
+            resultado.textContent = 'Por favor, digite um CEP.';
+            return;
+        }
+
+        try {
+            const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+            const data = await response.json();
+            
+            // Verifica se a API do ViaCEP retornou que o CEP não existe
+            if (data.erro) {
+                resultado.textContent = 'CEP não encontrado.';
+            } else {
+                resultado.textContent = `Endereço: ${data.logradouro}, Bairro: ${data.bairro}, Cidade: ${data.localidade} - ${data.uf}`;
+            }
+        } catch (error) {
+            console.error('Erro:', error);
+            resultado.textContent = 'Erro de conexão ao buscar o CEP.';
+        }
+    });
+    </script>
+</body>
+</html>
