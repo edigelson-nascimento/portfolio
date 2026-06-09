@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SessionStorage</title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <button onclick="salvarNome()">Salvar Nome</button>
+    <script>
+        
+        function salvarNome() {
+            const nomeInput = document.getElementById('nome');
+            const nome = nomeInput.value;
+            sessionStorage.setItem('nome', nome);
+            alert('Nome salvo no sessionStorage!');
+        }
+
+        sessionStorage.setItem('nome', 'João');
+
+        const nome = sessionStorage.getItem('nome');
+
+        sessionStorage.removeItem('nome');
+
+        sessionStorage.clear();
+    </script>
+</body>
+</html>
