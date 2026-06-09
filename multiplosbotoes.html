@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="produto" data-id="1" data-nome="Mouse" data-preco="50.00">Mouse</button>
+
+    <button class="produto" data-id="2" data-nome="Teclado" data-preco="100.00">Teclado</button>
+
+    <button class="produto" data-id="3" data-nome="Monitor" data-preco="500.00">Monitor</button>
+
+    <script>
+        const botoes = document.querySelectorAll('.produto');
+
+        botoes.forEach(botao => {
+            botao.addEventListener('click', () => {
+                const id = botao.getAttribute('data-id');
+                const nome = botao.getAttribute('data-nome');
+                const preco = botao.getAttribute('data-preco');
+
+                console.log(`ID: ${id}, Nome: ${nome}, Preço: ${preco}`);
+            });
+        }); 
+    </script>
+</body>
+</html>
