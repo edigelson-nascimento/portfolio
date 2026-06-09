@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Múltiplos Botões</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .produto {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #saida {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            min-height: 50px;
+        }
+    </style>
 </head>
 <body>
     <button class="produto" data-id="1" data-nome="Mouse" data-preco="50.00">Mouse</button>
-
     <button class="produto" data-id="2" data-nome="Teclado" data-preco="100.00">Teclado</button>
-
     <button class="produto" data-id="3" data-nome="Monitor" data-preco="500.00">Monitor</button>
+
+    <div id="saida">Clique em um produto</div>
 
     <script>
         const botoes = document.querySelectorAll('.produto');
+        const saida = document.getElementById('saida');
 
         botoes.forEach(botao => {
             botao.addEventListener('click', () => {
@@ -21,9 +38,13 @@
                 const nome = botao.getAttribute('data-nome');
                 const preco = botao.getAttribute('data-preco');
 
-                console.log(`ID: ${id}, Nome: ${nome}, Preço: ${preco}`);
+                saida.innerHTML = `
+                    <p><strong>ID:</strong> ${id}</p>
+                    <p><strong>Produto:</strong> ${nome}</p>
+                    <p><strong>Preço:</strong> R$ ${parseFloat(preco).toFixed(2)}</p>
+                `;
             });
-        }); 
+        });
     </script>
 </body>
 </html>
