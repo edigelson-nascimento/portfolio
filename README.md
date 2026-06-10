@@ -1,27 +1,26 @@
-# Portfolio - Edigelson Nascimento Conceição
+# Edigelson Nascimento Conceição - Aulas de Front-End
 
-Portfolio pessoal e repositório de estudos em desenvolvimento front-end.
+Repositório de estudos e prática em desenvolvimento front-end. Cada módulo contém exemplos práticos com HTML, CSS e JavaScript, organizados por assunto e comentados em português para facilitar o aprendizado.
 
-## Estrutura
+## Módulos
 
-```
-index.html              — Página inicial do portfolio
-assets/
-├── css/style.css       — Estilos globais
-└── js/                 — Scripts auxiliares
-aulas/                  — Módulos de estudo
-├── 01-fundamentos/     — Alert, prompt, console, eventos básicos
-├── 02-dom/             — Manipulação de elementos, formulários, dataset
-├── 03-api/             — Fetch, async/await, APIs externas (ViaCEP, JSONPlaceholder)
-├── 04-storage/         — SessionStorage
-├── 05-grid/            — CSS Grid com grid-template-areas
-└── 06-temas/           — Dark mode com classList.toggle
-```
+| Módulo | Assunto | Exemplos |
+|--------|---------|----------|
+| `01-fundamentos/` | Lógica e eventos | Alert, prompt, console, contador, eventos de teclado/mouse |
+| `02-dom/` | Manipulação do DOM | Dataset, formulários, estilos inline, múltiplos botões |
+| `03-api/` | Requisições HTTP | Fetch, async/await, ViaCEP, JSONPlaceholder, DELETE |
+| `04-storage/` | Armazenamento local | SessionStorage |
+| `05-grid/` | CSS Grid | Grid template areas, layout responsivo |
+| `06-temas/` | Temas dinâmicos | Dark mode com classList.toggle e CSS injetado via JS |
 
 ## Como usar
 
-Abra qualquer arquivo `.html` diretamente no navegador para ver os exemplos em ação.
+Abra qualquer arquivo `.html` no navegador. Todos os scripts são externos (`js/`) e o código é comentado explicando linha a linha.
 
 ## Tecnologias
 
-HTML5, CSS3, JavaScript (ES6+), Fetch API, CSS Grid.
+HTML5, CSS3, JavaScript (ES6+), Fetch API, CSS Grid
+
+---
+
+**Edigelson Nascimento Conceição** — Futuro Desenvolvedor Front-End
