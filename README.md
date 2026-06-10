@@ -21,6 +21,4 @@ Abra qualquer arquivo `.html` no navegador. Todos os scripts são externos (`js/
 
 HTML5, CSS3, JavaScript (ES6+), Fetch API, CSS Grid
 
----
 
-**Edigelson Nascimento Conceição** — Futuro Desenvolvedor Front-End
