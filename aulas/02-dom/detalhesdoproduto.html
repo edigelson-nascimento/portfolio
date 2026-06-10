@@ -6,10 +6,22 @@
     <title>Detalhes do Produto</title>
 </head>
 <body>
+    <!--
+        Estes elementos são atualizados dinamicamente pelo JS.
+        id="titulo-produto" e id="preco-produto" identificam
+        os elementos que serão modificados.
+    -->
     <h2 id="titulo-produto">Detalhes do Produto</h2>
     <p id="preco-produto">Preço: R$ 100,00</p>
+
+    <!--
+        data-nome e data-preco: atributos personalizados que
+        armazenam informações do produto para serem lidas via JS.
+        A classe "btn-produto" é usada pelo querySelectorAll.
+    -->
     <button class="btn-produto" data-nome="Mouse Gamer" data-preco="100.00">Ver Mouse</button>
     <button class="btn-produto" data-nome="Teclado Gamer" data-preco="200.00">Ver Teclado</button>
+
     <script src="js/detalhesdoproduto.js"></script>
 </body>
 </html>

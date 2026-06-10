@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS com a definição do Grid Layout -->
   <link rel="stylesheet" href="css/grid-areas.css">
   <title>Grid Areas</title>
 </head>
 <body>
+  <!--
+    Container com classe "layout" que define o grid.
+    Cada div filha tem uma classe que corresponde a uma
+    "grid-area" nomeada no CSS (header, menu, content, footer).
+    A disposição é controlada pelo grid-template-areas.
+  -->
   <div class="layout">
     <div class="header">Header</div>
     <div class="menu">Menu</div>
     <div class="content">Content</div>
     <div class="footer">Footer</div>
   </div>
+
   <script src="js/grid-areas.js"></script>
 </body>
 </html>

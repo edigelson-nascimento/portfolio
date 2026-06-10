@@ -6,9 +6,15 @@
     <title>Busca CEP</title>
 </head>
 <body>
+    <!--
+        Campo de entrada para o CEP (apenas números).
+        O botão dispara a consulta na API ViaCEP.
+        A div #resultado exibe o endereço encontrado ou mensagem de erro.
+    -->
     <input type="text" id="cep" placeholder="Digite o CEP (apenas números)">
     <button id="btn-cep">Buscar CEP</button>
     <div id="resultado"></div>
+
     <script src="js/buscacep.js"></script>
 </body>
 </html>

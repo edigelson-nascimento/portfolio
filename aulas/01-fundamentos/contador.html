@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador</title>
 </head>
 <body>
+    <!--
+        O <h1> com id="contador" exibe o valor atual do contador.
+        O id é usado pelo JS para localizar e atualizar este elemento.
+        Valor inicial: 0
+    -->
     <h1 id="contador">0</h1>
+
+    <!--
+        onclick chama as funções somar() e subtrair() diretamente no HTML.
+        Estas funções estão definidas no arquivo contador.js
+    -->
     <button onclick="somar()">+</button>
     <button onclick="subtrair()">-</button>
+
     <script src="js/contador.js"></script>
 </body>
 </html>

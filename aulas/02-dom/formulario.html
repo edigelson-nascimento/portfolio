@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulário</title>
 </head>
 <body>
+    <!--
+        O formulário tem id="myForm" para ser localizado pelo JS.
+        O input tem id="name" para capturar o valor digitado.
+        O button type="submit" dispara o evento "submit" do form.
+    -->
     <form id="myForm">
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name"><br><br>
         <button type="submit">Enviar</button>
     </form>
+
+    <!-- O JS vai interceptar o submit e evitar o recarregamento da página -->
     <script src="js/formulario.js"></script>
 </body>
 </html>

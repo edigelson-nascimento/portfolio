@@ -1,37 +1,61 @@
+/* DEFINE o container como um grid */
 .layout {
   display: grid;
+
+  /*
+    grid-template-areas: define zonas nomeadas no grid.
+    Cada linha entre aspas representa uma linha do grid.
+    Layout desktop: 3 colunas x 3 linhas
+
+    Exemplo visual:
+    | header | header | header |
+    | menu   | content| content|
+    | footer | footer | footer |
+  */
   grid-template-areas:
     "header header header"
     "menu content content"
     "footer footer footer";
+
   background-color: #eee;
-  grid-gap: 10px;
+  grid-gap: 10px;   /* espaçamento entre as áreas */
   padding: 10px;
 }
+
+/* ASSOCIA cada classe a uma área nomeada no grid */
 .header {
   grid-area: header;
   background-color: #f8b400;
   padding: 20px;
   text-align: center;
 }
+
 .menu {
   grid-area: menu;
   background-color: #4caf50;
   padding: 20px;
 }
+
 .content {
   grid-area: content;
   background-color: #2196f3;
   padding: 20px;
 }
+
 .footer {
   grid-area: footer;
   background-color: #f44336;
   padding: 20px;
   text-align: center;
 }
+
+/* RESPONSIVIDADE: para telas menores que 768px */
 @media (max-width: 768px) {
   .layout {
+    /*
+      Reorganiza o layout em uma única coluna.
+      A ordem muda: header, content, menu, footer
+    */
     grid-template-areas:
       "header"
       "content"

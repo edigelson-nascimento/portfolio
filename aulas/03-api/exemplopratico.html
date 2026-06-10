@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Prático - Excluir Produto</title>
+</head>
+<body>
+  <h1>Excluir Produto</h1>
+
+  <!--
+    data-method: define o método HTTP (DELETE) que será usado na requisição
+    data-id:     armazena o identificador único do produto
+    data-url:    armazena a URL base da API para onde a requisição será enviada
+
+    O atributo id="produto-10" no <li> permite localizar e remover
+    este elemento da página após a exclusão bem-sucedida.
+  -->
+  <ul>
+    <li id="produto-10">Produto 10
+
+      <button class="btn-excluir" 
+      data-method="DELETE" 
+      data-id="10" 
+      data-url="https://jsonplaceholder.typicode.com/posts/10">
+      
+      Excluir</button>
+    </li>
+  </ul>
+
+  <!--
+    O script é carregado ao final do <body> para garantir que
+    todos os elementos HTML já existam quando o JS executar.
+  -->
+  <script src="js/exemplopratico.js"></script>
+</body>
+</html>
