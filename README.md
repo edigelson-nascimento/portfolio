@@ -1,4 +1,4 @@
-# Edigelson Nascimento Conceição - Aulas de Front-End
+# Aulas de Front-End
 
 Repositório de estudos e prática em desenvolvimento front-end. Cada módulo contém exemplos práticos com HTML, CSS e JavaScript, organizados por assunto e comentados em português para facilitar o aprendizado.
 
