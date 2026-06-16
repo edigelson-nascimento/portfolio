@@ -1,6 +1,6 @@
 # Changelog
 
-## [v2.1.0]
+## [v2.1.1]
 ### Changed
 - `index.html`: cards da seção projetos agora com lista de links para cada aula
 - `index.html`: footer sem nome, apenas "Todos os direitos reservados"
