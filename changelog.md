@@ -1,6 +1,6 @@
 # Changelog
 
-## [v2.0.0]
+## [v2.1.0]
 ### Added
 - `index.html`: Bootstrap 5.3.3 via CDN (grid, cards, form, botões, navbar)
 
