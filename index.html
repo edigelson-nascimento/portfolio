@@ -1,35 +1,67 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-
+<head>
   <meta charset="UTF-8" />
-  <title>Edigelson Potfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edigelson Portfólio</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+</head>
+<body>
+  <header>
+    <h1>Edigelson Nascimento Conceição</h1>
+    <p>Futuro Técnico em Desenvolvimento de Sistemas</p>
+  </header>
 
-  <body>
-    <header>
-      <h1>Edigelson Nascimento Conceição</h1>
-    </header>
+  <main>
+    <section id="sobre" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo">Sobre</h2>
+      <p>Olá! eu sou estudante de ti, apaixonado por desenvolvimento web e focado em aprender cada dia mais.</p>
+    </section>
 
-    <main>
-      <section id="sobre">
-        <h2>Futuro Desenvolvedor Front-End</h2>
-      </section>
-    </main>
+    <section id="projetos" aria-labelledby="projetos-titulo">
+      <h2 id="projetos-titulo">Projetos</h2>
+      <div class="grid-projetos">
+        <article class="card">
+          <h3>Fundamentos JS</h3>
+          <p>Alert, prompt, eventos de teclado e mouse, contador interativo.</p>
+        </article>
+        <article class="card">
+          <h3>Manipulação do DOM</h3>
+          <p>Formulários, datasets, estilos dinâmicos e múltiplos botões.</p>
+        </article>
+        <article class="card">
+          <h3>Consumo de API</h3>
+          <p>Fetch e async/await com ViaCEP e JSONPlaceholder.</p>
+        </article>
+        <article class="card">
+          <h3>CSS Grid</h3>
+          <p>Layout responsivo com grid-template-areas.</p>
+        </article>
+      </div>
+    </section>
 
-    <p>Olá! Estou iniciando minha jornada na tecnologia...</p>
+    <section id="contato" aria-labelledby="contato-titulo">
+      <h2 id="contato-titulo">Contato</h2>
+      <form action="#" method="post" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required aria-required="true" />
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-    <h3>Minhas Habilidades:</h3>
-    <ul>
-      <li>Resolução de problemas</li>
-      <li>Trabalho em equipe</li>
-      <li>Curiosidade constante</li>
-    </ul>
-
-    <footer>
-      <p>Contato: edigelson@gmail.com</p>
-    </footer>
-
-  </body>
+  <footer>
+    <p>Contato: <a href="mailto:edigelson@gmail.com">edigelson@gmail.com</a></p>
+  </footer>
+</body>
 </html>

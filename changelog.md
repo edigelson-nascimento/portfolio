@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 ### Added
+- `index.html`: seções sobre, projetos (grid de cards) e formulário de contato
+- `assets/css/style.css`: reset, tipografia, grid responsivo, acessibilidade (foco, labels, aria)
 - Estrutura organizada do projeto
   - `aulas/` com módulos separados por assunto
   - Scripts JS externos para cada HTML

@@ -1,6 +1,6 @@
-# Aulas de Front-End
+# Portfólio / Aulas de Front-End
 
-Repositório de estudos e prática em desenvolvimento front-end. Cada módulo contém exemplos práticos com HTML, CSS e JavaScript, organizados por assunto e comentados em português para facilitar o aprendizado.
+Portfólio pessoal + repositório de estudos em desenvolvimento front-end. Cada módulo contém exemplos práticos com HTML, CSS e JavaScript, organizados por assunto e comentados em português para facilitar o aprendizado.
 
 ## Módulos
 
@@ -15,7 +15,7 @@ Repositório de estudos e prática em desenvolvimento front-end. Cada módulo co
 
 ## Como usar
 
-Abra qualquer arquivo `.html` no navegador. Todos os scripts são externos (`js/`) e o código é comentado explicando linha a linha.
+Abra `index.html` (portfólio) ou qualquer arquivo dentro de `aulas/` no navegador. Todos os scripts são externos (`js/`) e o código é comentado explicando linha a linha.
 
 ## Tecnologias
 
