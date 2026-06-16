@@ -2,24 +2,31 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
+  <!-- CONFIGURA a viewport para responsividade em dispositivos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edigelson Portfólio</title>
+  <!-- LINK para o arquivo de estilos externo -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
   <header>
+    <!-- NOME principal do portfólio -->
     <h1>Edigelson Nascimento Conceição</h1>
+    <!-- SUBTÍTULO com a formação desejada -->
     <p>Futuro Técnico em Desenvolvimento de Sistemas</p>
   </header>
 
   <main>
+    <!-- SEÇÃO "Sobre": apresentação pessoal -->
     <section id="sobre" aria-labelledby="sobre-titulo">
       <h2 id="sobre-titulo">Sobre</h2>
       <p>Olá! eu sou estudante de ti, apaixonado por desenvolvimento web e focado em aprender cada dia mais.</p>
     </section>
 
+    <!-- SEÇÃO "Projetos": grade de cards com os módulos de estudo -->
     <section id="projetos" aria-labelledby="projetos-titulo">
       <h2 id="projetos-titulo">Projetos</h2>
+      <!-- CONTAINER grid que organiza os cards responsivamente -->
       <div class="grid-projetos">
         <article class="card">
           <h3>Fundamentos JS</h3>
@@ -40,8 +47,10 @@
       </div>
     </section>
 
+    <!-- SEÇÃO "Contato": formulário para envio de mensagem -->
     <section id="contato" aria-labelledby="contato-titulo">
       <h2 id="contato-titulo">Contato</h2>
+      <!-- FORMULÁRIO com validação nativa e campos acessíveis -->
       <form action="#" method="post" novalidate>
         <div class="campo">
           <label for="nome">Nome</label>
@@ -61,6 +70,7 @@
   </main>
 
   <footer>
+    <!-- LINK de contato direto por e-mail -->
     <p>Contato: <a href="mailto:edigelson@gmail.com">edigelson@gmail.com</a></p>
   </footer>
 </body>
