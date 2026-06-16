@@ -6,6 +6,8 @@
 - `index.html`: comentários didáticos no padrão do repositório
 - `index.html`: links para GitHub e LinkedIn no header
 - `assets/css/style.css`: reset, tipografia, grid responsivo, acessibilidade (foco, labels, aria)
+- `index.html`: Bootstrap 5.3.3 via CDN (grid, cards, form, botões)
+- `assets/css/style.css`: simplificado — só customizações sobre o Bootstrap
 - `assets/css/style.css`: estilos para .redes (links de redes sociais)
 - Estrutura organizada do projeto
   - `aulas/` com módulos separados por assunto

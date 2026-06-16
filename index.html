@@ -2,81 +2,89 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <!-- CONFIGURA a viewport para responsividade em dispositivos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edigelson Portfólio</title>
-  <!-- LINK para o arquivo de estilos externo -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <!-- NOME principal do portfólio -->
+  <header class="text-center py-5">
     <h1>Edigelson Nascimento Conceição</h1>
-    <!-- SUBTÍTULO com a formação desejada -->
-    <p>Futuro Técnico em Desenvolvimento de Sistemas</p>
-    <!-- LINKS para redes profissionais -->
-    <div class="redes">
-      <a href="https://github.com/edigelson-nascimento" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/edigelson-nascimento" target="_blank" rel="noopener">LinkedIn</a>
+    <p class="text-muted">Futuro Técnico em Desenvolvimento de Sistemas</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <a href="https://github.com/edigelson-nascimento" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/edigelson-nascimento" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </header>
 
-  <main>
-    <!-- SEÇÃO "Sobre": apresentação pessoal -->
-    <section id="sobre" aria-labelledby="sobre-titulo">
-      <h2 id="sobre-titulo">Sobre</h2>
-      <p>Olá! eu sou estudante de ti, apaixonado por desenvolvimento web e focado em aprender cada dia mais.</p>
+  <main class="container" style="max-width: 900px;">
+    <section id="sobre" class="mb-5" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo" class="border-bottom pb-1">Sobre</h2>
+      <p class="mt-3">Olá! eu sou estudante de ti, apaixonado por desenvolvimento web e focado em aprender cada dia mais.</p>
     </section>
 
-    <!-- SEÇÃO "Projetos": grade de cards com os módulos de estudo -->
-    <section id="projetos" aria-labelledby="projetos-titulo">
-      <h2 id="projetos-titulo">Projetos</h2>
-      <!-- CONTAINER grid que organiza os cards responsivamente -->
-      <div class="grid-projetos">
-        <article class="card">
-          <h3>Fundamentos JS</h3>
-          <p>Alert, prompt, eventos de teclado e mouse, contador interativo.</p>
+    <section id="projetos" class="mb-5" aria-labelledby="projetos-titulo">
+      <h2 id="projetos-titulo" class="border-bottom pb-1">Projetos</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Fundamentos JS</h3>
+              <p class="card-text">Alert, prompt, eventos de teclado e mouse, contador interativo.</p>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <h3>Manipulação do DOM</h3>
-          <p>Formulários, datasets, estilos dinâmicos e múltiplos botões.</p>
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Manipulação do DOM</h3>
+              <p class="card-text">Formulários, datasets, estilos dinâmicos e múltiplos botões.</p>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <h3>Consumo de API</h3>
-          <p>Fetch e async/await com ViaCEP e JSONPlaceholder.</p>
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Consumo de API</h3>
+              <p class="card-text">Fetch e async/await com ViaCEP e JSONPlaceholder.</p>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <h3>CSS Grid</h3>
-          <p>Layout responsivo com grid-template-areas.</p>
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">CSS Grid</h3>
+              <p class="card-text">Layout responsivo com grid-template-areas.</p>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- SEÇÃO "Contato": formulário para envio de mensagem -->
-    <section id="contato" aria-labelledby="contato-titulo">
-      <h2 id="contato-titulo">Contato</h2>
-      <!-- FORMULÁRIO com validação nativa e campos acessíveis -->
-      <form action="#" method="post" novalidate>
-        <div class="campo">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required aria-required="true" />
+    <section id="contato" class="mb-5" aria-labelledby="contato-titulo">
+      <h2 id="contato-titulo" class="border-bottom pb-1">Contato</h2>
+      <form action="#" method="post" novalidate class="mt-3" style="max-width: 500px;">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" name="nome" class="form-control" required aria-required="true" />
         </div>
-        <div class="campo">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required aria-required="true" />
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" name="email" class="form-control" required aria-required="true" />
         </div>
-        <div class="campo">
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required aria-required="true"></textarea>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" class="btn btn-dark">Enviar</button>
       </form>
     </section>
   </main>
 
-  <footer>
-    <!-- DIREITOS autorais com ano e sigla -->
-    <p>&copy; 2026 Edigelson Nascimento Conceição. Todos os direitos reservados.</p>
+  <footer class="text-center py-4 border-top">
+    <p class="mb-0">&copy; 2026 Edigelson Nascimento Conceição. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

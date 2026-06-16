@@ -28,6 +28,6 @@ Abra `index.html` (portfólio) ou qualquer arquivo dentro de `aulas/` no navegad
 
 ## Tecnologias
 
-HTML5, CSS3, JavaScript (ES6+), Fetch API, CSS Grid
+HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Fetch API, CSS Grid
 
 
