@@ -27,6 +27,28 @@ header p {
   margin-top: 0.25rem;
 }
 
+.redes {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.redes a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.redes a:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;

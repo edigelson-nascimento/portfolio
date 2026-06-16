@@ -2,6 +2,15 @@
 
 Portfólio pessoal + repositório de estudos em desenvolvimento front-end. Cada módulo contém exemplos práticos com HTML, CSS e JavaScript, organizados por assunto e comentados em português para facilitar o aprendizado.
 
+## Portfólio
+
+O `index.html` é a página principal do portfólio, com:
+- **Sobre** — apresentação pessoal
+- **Projetos** — cards com os módulos de estudo em grid responsivo
+- **Contato** — formulário acessível com labels e validação nativa
+- **Responsividade** — layout adaptável a mobile, tablet e desktop
+- **Acessibilidade** — headings semânticos, aria labels, foco visível
+
 ## Módulos
 
 | Módulo | Assunto | Exemplos |
