@@ -7,6 +7,7 @@
 ### Changed
 - `assets/css/style.css`: simplificado — só customizações sobre o Bootstrap
 - `index.html`: markup refatorado para classes Bootstrap
+- `index.html`: cards da seção projetos agora com lista de links para cada aula
 
 ## [v1.0.0]
 ### Added
