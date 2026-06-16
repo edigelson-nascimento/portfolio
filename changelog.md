@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [v1.0.0]
 ### Added
 - `index.html`: seções sobre, projetos (grid de cards) e formulário de contato
 - `index.html`: comentários didáticos no padrão do repositório
@@ -19,9 +19,3 @@
 - `gridareas.html`: corrigido link do JS e elementos HTML semânticos
 - Removido arquivo `gitignore` redundante (sem ponto)
 
-## [Previous]
-### Added
-- Feature: login
-  - Recuperação de login
-  - Login via Google
-  - Cadastrar nova senha
