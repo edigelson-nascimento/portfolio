@@ -1,34 +1,30 @@
 # Changelog
 
-## [v2.1.1]
-### Changed
-- `index.html`: cards da seção projetos agora com lista de links para cada aula
-- `index.html`: footer sem nome, apenas "Todos os direitos reservados"
+## [1.1.0] - 2026-06-19
 
-## [v2.0.0]
-### Added
-- `index.html`: Bootstrap 5.3.3 via CDN (grid, cards, form, botões)
+### Adicionado
+- Seção de contato com layout em duas colunas (formulário à esquerda, informações à direita)
+- Informações de contato com ícones (e-mail, WhatsApp, localização)
+- Seção "Vamos trabalhar juntos?" com botões de WhatsApp e e-mail
+- Geração dinâmica de currículo em PDF via jsPDF ao clicar em "Baixar Currículo"
+- Script `assets/js/gerar-curriculo.js` para montagem do PDF com dados pessoais, habilidades e projetos
+- Script `assets/js/ano.js` para atualizar automaticamente o ano no rodapé
+- Bootstrap Icons para ícones em toda a página
+- Informações pessoais no cabeçalho (localização, estado civil, nacionalidade)
 
-### Changed
-- `assets/css/style.css`: simplificado — só customizações sobre o Bootstrap
-- `index.html`: markup refatorado para classes Bootstrap
+### Alterado
+- Texto "Sobre" reescrito
+- Botão "Baixar Currículo" movido para o cabeçalho, ao lado das redes sociais
+- Placeholders de contato substituídos por dados reais
+- Footer agora com ano dinâmico via JavaScript
+- README e CHANGELOG adicionados/atualizados
 
-## [v1.0.0]
-### Added
-- `index.html`: seções sobre, projetos (grid de cards) e formulário de contato
-- `index.html`: comentários didáticos no padrão do repositório
-- `index.html`: links para GitHub e LinkedIn no header
-- `assets/css/style.css`: reset, tipografia, grid responsivo, acessibilidade (foco, labels, aria)
-- `assets/css/style.css`: estilos para .redes (links de redes sociais)
-- Estrutura organizada do projeto
-  - `aulas/` com módulos separados por assunto
-  - Scripts JS externos para cada HTML
+## [1.0.0] - 2026-06-19
 
-### Fixed
-- `index.html`: tag `<h1>` fechada corretamente
-- `index.html`: footer alterado para "Todos os direitos reservados"
-- `.env`: `DB_PORT` duplicado corrigido para `DB_HOST`
-- `detalhesdoproduto.html`: `id` duplicado alterado para `class`
-- `gridareas.html`: corrigido link do JS e elementos HTML semânticos
-- Removido arquivo `gitignore` redundante (sem ponto)
-
+### Adicionado
+- Página inicial do portfólio com seções Sobre, Projetos e Contato
+- Layout responsivo com Bootstrap 5
+- Cards de projetos com links para os módulos de estudo
+- Formulário de contato acessível
+- Botão "Voltar ao topo"
+- Módulos de estudo: Fundamentos JS, DOM, API, Storage, CSS Grid, Temas

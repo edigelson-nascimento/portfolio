@@ -7,7 +7,9 @@ Portfólio pessoal + repositório de estudos em desenvolvimento front-end. Cada 
 O `index.html` é a página principal do portfólio, com:
 - **Sobre** — apresentação pessoal
 - **Projetos** — cards com os módulos de estudo em grid responsivo
-- **Contato** — formulário acessível com labels e validação nativa
+- **Contato** — formulário acessível com validação nativa + informações de contato lado a lado
+- **CTA** — chamada para ação com links diretos para WhatsApp e e-mail
+- **Currículo** — geração dinâmica de PDF via jsPDF
 - **Responsividade** — layout adaptável a mobile, tablet e desktop
 - **Acessibilidade** — headings semânticos, aria labels, foco visível
 
@@ -24,10 +26,10 @@ O `index.html` é a página principal do portfólio, com:
 
 ## Como usar
 
-Abra `index.html` (portfólio) ou qualquer arquivo dentro de `aulas/` no navegador. Todos os scripts são externos (`js/`) e o código é comentado explicando linha a linha.
+Abra `index.html` (portfólio) ou qualquer arquivo dentro de `aulas/` no navegador. Todos os scripts são externos (`assets/js/`) e o código é comentado explicando linha a linha.
 
 ## Tecnologias
 
-HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Fetch API, CSS Grid
+HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Bootstrap Icons, jsPDF, Fetch API, CSS Grid
 
 

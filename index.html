@@ -1,31 +1,59 @@
 <!doctype html>
+<!-- ============================================================
+  Portfolio pessoal - Edigelson Nascimento Conceição
+  Tecnologias: HTML5, Bootstrap 5, Bootstrap Icons, jsPDF
+============================================================ -->
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edigelson Portfólio</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Estilo customizado -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- jsPDF para gerar currículo -->
+  <script src="https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
 </head>
 <body>
+
+  <!-- ==================== CABEÇALHO ==================== -->
   <header class="text-center py-5">
     <h1>Edigelson Nascimento Conceição</h1>
     <p class="text-muted">Futuro Técnico em Desenvolvimento de Sistemas</p>
+    <!-- Informações pessoais -->
+    <div class="d-flex justify-content-center gap-3 mt-1 small text-muted">
+      <span><i class="bi bi-geo-alt me-1"></i> Camaçari, BA</span>
+      <span><i class="bi bi-person me-1"></i> Solteiro</span>
+      <span><i class="bi bi-flag me-1"></i> Brasileiro</span>
+    </div>
+    <!-- Redes sociais e currículo -->
     <div class="d-flex justify-content-center gap-2 mt-3">
       <a href="https://github.com/edigelson-nascimento" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">GitHub</a>
       <a href="https://linkedin.com/in/edigelson-nascimento" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">LinkedIn</a>
+      <button onclick="gerarCurriculo()" class="btn btn-dark btn-sm">
+        <i class="bi bi-download me-1"></i> Baixar Currículo
+      </button>
     </div>
   </header>
 
+  <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
   <main class="container" style="max-width: 900px;">
+
+    <!-- Seção Sobre -->
     <section id="sobre" class="mb-5" aria-labelledby="sobre-titulo">
       <h2 id="sobre-titulo" class="border-bottom pb-1">Sobre</h2>
-      <p class="mt-3">Olá! eu sou estudante de ti, apaixonado por desenvolvimento web e focado em aprender cada dia mais.</p>
+      <p class="mt-3">Olá! Sou estudante de TI, apaixonado por desenvolvimento web e sempre em busca de aprender mais.</p>
     </section>
 
+    <!-- Seção Projetos -->
     <section id="projetos" class="mb-5" aria-labelledby="projetos-titulo">
       <h2 id="projetos-titulo" class="border-bottom pb-1">Projetos</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+
+        <!-- Card: Fundamentos JS -->
         <article class="col">
           <div class="card h-100">
             <div class="card-body">
@@ -39,6 +67,8 @@
             </div>
           </div>
         </article>
+
+        <!-- Card: Manipulação do DOM -->
         <article class="col">
           <div class="card h-100">
             <div class="card-body">
@@ -53,6 +83,8 @@
             </div>
           </div>
         </article>
+
+        <!-- Card: Consumo de API -->
         <article class="col">
           <div class="card h-100">
             <div class="card-body">
@@ -67,6 +99,8 @@
             </div>
           </div>
         </article>
+
+        <!-- Card: CSS Grid -->
         <article class="col">
           <div class="card h-100">
             <div class="card-body">
@@ -78,33 +112,90 @@
             </div>
           </div>
         </article>
+
       </div>
     </section>
 
+    <!-- Seção Contato -->
     <section id="contato" class="mb-5" aria-labelledby="contato-titulo">
       <h2 id="contato-titulo" class="border-bottom pb-1">Contato</h2>
-      <form action="#" method="post" novalidate class="mt-3" style="max-width: 500px;">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" id="nome" name="nome" class="form-control" required aria-required="true" />
+      <div class="row mt-3">
+
+        <!-- Coluna: Formulário -->
+        <div class="col-md-6">
+          <form action="#" method="post" novalidate>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control" required aria-required="true" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control" required aria-required="true" />
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" id="email" name="email" class="form-control" required aria-required="true" />
+
+        <!-- Coluna: Informações de Contato -->
+        <div class="col-md-6">
+          <div class="card border-0 bg-transparent">
+            <div class="card-body">
+              <h3 class="h5 mb-3">Informações de Contato</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-envelope-at me-2"></i>
+                  <a href="mailto:contato@edigelson.dev" class="text-decoration-none">contato@edigelson.dev</a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-whatsapp me-2"></i>
+                  <a href="https://wa.me/5571989210407" class="text-decoration-none" target="_blank" rel="noopener">(71) 98921-0407</a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-geo-alt me-2"></i>
+                  Camaçari, Bahia
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required aria-required="true"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark">Enviar</button>
-      </form>
+
+      </div>
     </section>
+
+    <!-- Seção CTA (chamada para ação) -->
+    <section class="mb-5 text-center" aria-labelledby="cta-titulo">
+      <h2 id="cta-titulo" class="border-bottom pb-1">Vamos trabalhar juntos?</h2>
+      <p class="mt-3">Tem um projeto em mente ou quer bater um papo? Me chama no WhatsApp ou me mande um e-mail!</p>
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <a href="https://wa.me/5571989210407" class="btn btn-success" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp me-1"></i> WhatsApp
+        </a>
+        <a href="mailto:contato@edigelson.dev" class="btn btn-outline-dark">
+          <i class="bi bi-envelope-at me-1"></i> E-mail
+        </a>
+      </div>
+    </section>
+
+    <!-- Botão flutuante: voltar ao topo -->
+    <button id="backToTop" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px; display: none;" aria-label="Voltar ao topo">
+      ↑
+    </button>
   </main>
 
+  <!-- ==================== RODAPÉ ==================== -->
   <footer class="text-center py-4 border-top">
-    <p class="mb-0 small">&copy; 2026 Todos os direitos reservados.</p>
+    <p class="mb-0 small">&copy; <span id="ano"></span> Edigelson Nascimento Conceição.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/ano.js"></script>
+  <script src="assets/js/btnvoltar.js"></script>
+  <script src="assets/js/gerar-curriculo.js"></script>
+
 </body>
 </html>
