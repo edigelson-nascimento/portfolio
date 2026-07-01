@@ -108,10 +108,10 @@ function gerarCurriculo() {
     { titulo: 'Consumo de API', desc: 'Fetch e async/await com ViaCEP e JSONPlaceholder.', data: '2026-06-15' },
     { titulo: 'Manipulacao do DOM', desc: 'Formularios, datasets, estilos dinamicos e multiplos botoes.', data: '2026-06-10' },
     { titulo: 'Fundamentos JS', desc: 'Alert, prompt, eventos de teclado e mouse, contador interativo.', data: '2026-06-05' },
-    { titulo: 'Conversor', desc: 'Conversor Bitcoin para Real com cotacao em tempo real.', data: '2026-06-19', repo: 'github.com/edigelson-nascimento/conversor', deploy: 'edigelson-nascimento.github.io/conversor' },
-    { titulo: 'SalvusPet', desc: 'Plataforma de financiamento coletivo para causa animal.', data: '2026-06-15', repo: 'github.com/edigelson-nascimento/salvuspet', deploy: 'edigelson-nascimento.github.io/salvuspet' },
-    { titulo: 'Decodificador', desc: 'Decodificador com tema hacker para criptografar e descriptografar texto.', data: '2026-06-10', repo: 'github.com/edigelson-nascimento/decodificador', deploy: 'edigelson-nascimento.github.io/decodificador' },
-    { titulo: 'Dra. Quantum', desc: 'Bot Discord multifuncional com IA e moderacao automatica.', data: '2026-06-05', repo: 'github.com/edigelson-nascimento/dra.-quantum---discord-bot-multifuncional' }
+    { titulo: 'SalvusPet', desc: 'Plataforma de financiamento coletivo para causa animal.', data: '2026-01-16', repo: 'github.com/edigelson-nascimento/salvuspet', deploy: 'edigelson-nascimento.github.io/salvuspet' },
+    { titulo: 'Dra. Quantum', desc: 'Bot Discord multifuncional com IA e moderacao automatica.', data: '2026-01-03', repo: 'github.com/edigelson-nascimento/dra.-quantum---discord-bot-multifuncional' },
+    { titulo: 'Conversor', desc: 'Conversor Bitcoin para Real com cotacao em tempo real.', data: '2022-09-07', repo: 'github.com/edigelson-nascimento/conversor', deploy: 'edigelson-nascimento.github.io/conversor' },
+    { titulo: 'Decodificador', desc: 'Decodificador com tema hacker para criptografar e descriptografar texto.', data: '2022-08-09', repo: 'github.com/edigelson-nascimento/decodificador', deploy: 'edigelson-nascimento.github.io/decodificador' }
   ];
   projetos.sort((a, b) => new Date(b.data) - new Date(a.data));
   projetos.forEach(p => {
