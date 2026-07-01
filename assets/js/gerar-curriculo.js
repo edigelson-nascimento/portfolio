@@ -104,11 +104,16 @@ function gerarCurriculo() {
   doc.setFont('helvetica', 'normal');
   doc.setTextColor(60, 60, 60);
   const projetos = [
-    { titulo: 'Fundamentos JS', desc: 'Alert, prompt, eventos de teclado e mouse, contador interativo.' },
-    { titulo: 'Manipulacao do DOM', desc: 'Formularios, datasets, estilos dinamicos e multiplos botoes.' },
-    { titulo: 'Consumo de API', desc: 'Fetch e async/await com ViaCEP e JSONPlaceholder.' },
-    { titulo: 'CSS Grid', desc: 'Layout responsivo com grid-template-areas.' }
+    { titulo: 'CSS Grid', desc: 'Layout responsivo com grid-template-areas.', data: '2026-06-19' },
+    { titulo: 'Consumo de API', desc: 'Fetch e async/await com ViaCEP e JSONPlaceholder.', data: '2026-06-15' },
+    { titulo: 'Manipulacao do DOM', desc: 'Formularios, datasets, estilos dinamicos e multiplos botoes.', data: '2026-06-10' },
+    { titulo: 'Fundamentos JS', desc: 'Alert, prompt, eventos de teclado e mouse, contador interativo.', data: '2026-06-05' },
+    { titulo: 'Conversor', desc: 'Conversor Bitcoin para Real com cotacao em tempo real.', data: '2026-06-19', repo: 'github.com/edigelson-nascimento/conversor', deploy: 'edigelson-nascimento.github.io/conversor' },
+    { titulo: 'SalvusPet', desc: 'Plataforma de financiamento coletivo para causa animal.', data: '2026-06-15', repo: 'github.com/edigelson-nascimento/salvuspet', deploy: 'edigelson-nascimento.github.io/salvuspet' },
+    { titulo: 'Decodificador', desc: 'Decodificador com tema hacker para criptografar e descriptografar texto.', data: '2026-06-10', repo: 'github.com/edigelson-nascimento/decodificador', deploy: 'edigelson-nascimento.github.io/decodificador' },
+    { titulo: 'Dra. Quantum', desc: 'Bot Discord multifuncional com IA e moderacao automatica.', data: '2026-06-05', repo: 'github.com/edigelson-nascimento/dra.-quantum---discord-bot-multifuncional' }
   ];
+  projetos.sort((a, b) => new Date(b.data) - new Date(a.data));
   projetos.forEach(p => {
     if (y > 260) {
       doc.addPage();
@@ -121,6 +126,15 @@ function gerarCurriculo() {
     const desc = doc.splitTextToSize(p.desc, contentWidth - 10);
     doc.text(desc, margin + 10, y);
     y += desc.length * 5 + 5;
+    doc.setFontSize(8);
+    doc.setTextColor(150, 150, 150);
+    const linhaData = p.data;
+    const linhaRepo = p.repo ? ' | ' + p.repo : '';
+    const linhaDeploy = p.deploy ? ' | ' + p.deploy : '';
+    doc.text(linhaData + linhaRepo + linhaDeploy, margin + 10, y);
+    doc.setTextColor(60, 60, 60);
+    doc.setFontSize(10);
+    y += 5;
   });
 
   // Rodapé
