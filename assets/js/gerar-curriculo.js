@@ -104,7 +104,7 @@ function gerarCurriculo() {
   doc.setFont('helvetica', 'normal');
   doc.setTextColor(60, 60, 60);
   const projetos = [
-    { titulo: 'CSS Grid', desc: 'Layout responsivo com grid-template-areas.', data: '2026-06-19' },
+    { titulo: 'CSS Grid', desc: 'Layout responsivo com grid-template-areas, grid-column, grid-row e design adaptavel.', data: '2026-06-19' },
     { titulo: 'Consumo de API', desc: 'Fetch e async/await com ViaCEP e JSONPlaceholder.', data: '2026-06-15' },
     { titulo: 'Manipulacao do DOM', desc: 'Formularios, datasets, estilos dinamicos e multiplos botoes.', data: '2026-06-10' },
     { titulo: 'Fundamentos JS', desc: 'Alert, prompt, eventos de teclado e mouse, contador interativo.', data: '2026-06-05' },
