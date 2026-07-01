@@ -49,7 +49,7 @@ function gerarCurriculo() {
   doc.setTextColor(80, 80, 80);
   doc.text('E-mail: contato@edigelson.dev', margin, y);
   y += 5;
-  doc.text('Email: @edigelson.dev', margin, y);
+  doc.text('WhatsApp: @edigelson.dev', margin, y);
   y += 5;
   doc.text('GitHub: github.com/edigelson-nascimento', margin, y);
   y += 5;
