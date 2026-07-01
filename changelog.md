@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0] - 2026-07-01
+
+### Adicionado
+- Datas nos cards de projetos (mês/ano)
+- Repositórios do GitHub como novos cards de projeto (Conversor, SalvusPet, Decodificador, Dra. Quantum)
+- Links de deploy (GitHub Pages) para projetos com site publicado
+- Cache-bust no script do currículo para evitar cache do navegador
+
+### Alterado
+- Cards reorganizados do mais novo ao mais antigo
+- Botões dos cards alinhados com flex-column e mt-auto
+- WhatsApp alterado para @edigelson.dev
+- Projetos do currículo PDF agora incluem data, repositório e link de deploy
+
 ## [1.1.0] - 2026-06-19
 
 ### Adicionado
